@@ -6,7 +6,10 @@ Simple but effective widget which pulls data from your Overseerr server and disp
 2. Copy the contents of the **overseerr-overview.js** file into a new Scriptable script.
 3. Change the **overseerrUrl** and **apiKey** variables.
 4. That's it! Simply add the widget to your screen (e.g. on iPhone go into "jiggle mode" select "Add widget", select Scriptable and choose your new script.
-5. You can choose the **When interacting** option to **Open URL** and add your Overseerr URL.
+
+###Notes
+- This script currently only supports the **medium** sized widget. See example screenshots for how this should look.
+- You can choose the **When interacting** option to **Open URL** and add your Overseerr URL.
 
 ## Features
 - Shows you how many pending requests - tap this to go to requests page in Overseerr.
