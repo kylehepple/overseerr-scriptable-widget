@@ -26,6 +26,8 @@ const colors = {
   widgetGradientEnd: '#200020',
   defaultText: '#FFF'
 };
+const textSize = 14;
+const titleSize = 16;
 
 const widget = new ListWidget();
 
@@ -49,7 +51,7 @@ const initialSetup = async function() {
   stack.addSpacer(5);
 
   const text = stack.addText(widgetTitle);
-  text.font = Font.boldRoundedSystemFont(16);
+  text.font = Font.boldRoundedSystemFont(titleSize);
   text.textColor = new Color(colors.defaultText);
 
   widget.addSpacer(30);
@@ -65,7 +67,7 @@ const buildTag = function(stack, text, backgroundColor, borderColor, slim) {
 
   const tagStack = stack.addStack();
   const tagText = tagStack.addText(text);
-  tagText.font = Font.systemFont(14);
+  tagText.font = Font.systemFont(textSize);
   tagText.textColor = new Color(colors.defaultText);
 
   tagStack.borderWidth = 2;
@@ -142,7 +144,7 @@ const addFooter = async function() {
   const updatedStack = stack.addStack();
   const updatedText = updatedStack.addText(`Last updated: ${dt.getHours().toString().padStart(2, '0')}:${dt.getMinutes().toString().padStart(2, '0')}`);
   
-  updatedText.font = Font.systemFont(14);
+  updatedText.font = Font.systemFont(textSize);
   updatedText.textOpacity = 0.25;
   updatedText.textColor = new Color(colors.defaultText);
   updatedStack.setPadding(5,0,0,0);
